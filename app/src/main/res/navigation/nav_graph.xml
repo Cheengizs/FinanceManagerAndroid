@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.financemanager.ui.transactions.MainFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_transactionDetailFragment"
+            app:destination="@id/transactionDetailFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_addEditTransactionFragment"
+            app:destination="@id/addEditTransactionFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionDetailFragment"
+        android:name="com.financemanager.ui.transactions.TransactionDetailFragment"
+        android:label="@string/transaction_details"
+        tools:layout="@layout/fragment_transaction_detail">
+        <argument
+            android:name="transactionId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_transactionDetailFragment_to_addEditTransactionFragment"
+            app:destination="@id/addEditTransactionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditTransactionFragment"
+        android:name="com.financemanager.ui.transactions.AddEditTransactionFragment"
+        android:label="@string/add_transaction"
+        tools:layout="@layout/fragment_add_edit_transaction">
+        <argument
+            android:name="transactionId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.financemanager.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

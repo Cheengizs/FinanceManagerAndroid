@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Менеджер финансов</string>
+    <string name="tagline">Ваш личный финансовый помощник</string>
+    <string name="balance">Текущий баланс</string>
+    <string name="transactions">Транзакции</string>
+    <string name="no_transactions">Транзакций пока нет.\nНажмите + для добавления.</string>
+    <string name="add_transaction">Добавить транзакцию</string>
+    <string name="edit_transaction">Редактировать</string>
+    <string name="transaction_details">Детали транзакции</string>
+    <string name="title">Название</string>
+    <string name="description">Описание</string>
+    <string name="amount">Сумма (₽)</string>
+    <string name="date">Дата</string>
+    <string name="date_hint">Дата (дд.ММ.гггг)</string>
+    <string name="category">Категория</string>
+    <string name="income">Доход</string>
+    <string name="expense">Расход</string>
+    <string name="save">Сохранить</string>
+    <string name="edit">Редактировать</string>
+    <string name="delete">Удалить</string>
+    <string name="transaction_deleted">Транзакция удалена</string>
+    <string name="undo">ОТМЕНА</string>
+    <string name="settings">Настройки</string>
+    <string name="appearance">Внешний вид</string>
+    <string name="dark_theme">Тёмная тема</string>
+    <string name="dark_theme_desc">Переключение между светлой и тёмной темой</string>
+    <string name="language">Язык</string>
+    <string name="english">English</string>
+    <string name="russian">Русский</string>
+    <string name="fill_all_fields">Пожалуйста, заполните все обязательные поля</string>
+    <string name="invalid_amount">Введите корректную положительную сумму</string>
+</resources>
