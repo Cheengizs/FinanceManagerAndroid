@@ -55,7 +55,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/dark_theme_desc"
                         android:textSize="13sp"
-                        android:textColor="?android:attr/textColorSecondary" />
+                        android:textColor="#9E9E9E" />
                 </LinearLayout>
 
                 <com.google.android.material.switchmaterial.SwitchMaterial
